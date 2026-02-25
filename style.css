@@ -1,0 +1,75 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background: #f4f4f4;
+}
+
+/* Skip link */
+.skip-link {
+position: absolute;
+left: -999px;
+top: 10px;
+background: black;
+color: white;
+padding: 10px;
+}
+
+.skip-link:focus {
+left: 10px;
+}
+
+/* Navbar - FLEX */
+.navbar ul {
+display: flex;
+justify-content: center;
+gap: 30px;
+list-style: none;
+background: #222;
+padding: 15px;
+margin: 0;
+}
+
+.navbar a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.navbar a:hover {
+color: #00ffcc;
+}
+
+/* GRID */
+.grid-container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+padding: 20px;
+}
+
+/* FLEX Gallery */
+.flex-gallery {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+padding: 20px;
+}
+
+/* Box Model */
+img {
+border: 4px solid #333;
+padding: 10px;
+border-radius: 15px;
+transition: transform 0.3s ease;
+}
+
+img:hover {
+transform: scale(1.05);
+}
+
+/* nth-child */
+.flex-gallery img:nth-child(even) {
+border-radius: 50%;
+}
